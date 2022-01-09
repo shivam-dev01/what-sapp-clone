@@ -1,0 +1,105 @@
+.rightside{
+    position: relative;
+    width: 499px;
+    height: 552px;
+    border: 1px solid black;
+    flex-direction: column; 
+}
+.righthead{
+    display: flex ;
+    width: 497px;
+    height: 60px;
+    border: 1px solid black; 
+   background-color: #ededed;
+}
+.profilepic{
+    display: flex;
+    border: 1px solid;
+    border-radius: 50px;
+    margin-top: 6px;
+    margin-left:11px;
+    width: 46px;
+    height: 44px;
+    background-color: #fff;
+}
+.sicon{
+    margin-left: 363px;
+    margin-top: 13px;
+    display: flex;
+    color: #51585c;
+}
+.dot{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 12px;
+    color: #51585c;
+}
+.chatbox{
+    display: flex ;
+    width: 497px;
+    height: 431px;
+    border: 1px solid black; 
+   background-color: white;
+}
+.messtype{
+    display: flex ;
+    width: 497px;
+    height: 60px;
+    border: 1px solid black; 
+   background-color: #ededed; 
+}
+.input{
+    position: relative;
+    width: 335px;
+    height: 35px;
+    display: flex;
+    margin: 10px 0px 0px 55px;
+    background-color: #fff;
+    font: inherit;
+    font-size: .9rem;
+    border:none;
+    border-radius: 5px;
+}
+.input:focus {
+    outline: none;
+}
+.smile{
+    margin: 13px 0px 0px 13px;
+    display: flex;
+    color: #51585c;
+}
+.attach{
+    margin: 13px -28px 0px 13px;
+    display: flex;
+    color: #51585c;
+}
+.voice{
+    margin: 13px 0px 0px 16px;
+    display: flex;
+    color: #51585c;
+}
+.dots{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 12px;
+    color: #51585c;
+}
+.tasks{
+    position: absolute;
+    border: 1px solid;
+    width: 147px;
+    height: 138px;
+    transform-origin: right top;
+    transform: scale(1);
+    right: 14px;
+    top: 33px;
+    overflow: visible;
+    z-index: 9993;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.clickable {
+    cursor: pointer;
+}

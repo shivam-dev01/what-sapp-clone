@@ -1,0 +1,41 @@
+<div class="rightside">
+    <div class="righthead">
+        <div class="profilepic"></div>
+        <div class="sicon">
+            <mat-icon>search</mat-icon>
+         </div>
+         <div class="dot clickable" (click)="toggleMenu()">
+            <mat-icon>more_vert</mat-icon>
+            <div class="tasks" *ngIf="!ismenuOpen">
+    Contact info
+      <br>
+     
+      Select messages
+      <br>
+      
+      Close chat
+      <br>
+     Mute notifications
+      <br>
+      Clear messages
+      <br>
+      Delete chat
+    
+    </div>
+         </div>   
+    </div>
+    <div class="chatbox">chatbox</div>
+    <div class="messtype">
+        <div class="smile">
+            <mat-icon>mood</mat-icon>
+        </div>
+        <div class="attach">
+            <mat-icon>attachment</mat-icon>
+        </div>
+            <input type="text" class="input"  placeholder=" Type a message">
+            <div class="voice">
+                <mat-icon>keyboard_voice</mat-icon>
+            </div>
+           
+    </div>  
+</div>

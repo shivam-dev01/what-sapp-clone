@@ -1,0 +1,154 @@
+.leftcont{
+    display: flex;
+    max-width: 300px;
+    min-height: 530px;
+    border: 1px solid steelblue; 
+    flex-direction: column;
+   
+}
+.lefthead{
+    display: flex ;
+    width: 300px;
+    height: 60px;
+    border: 1px solid steelblue; 
+   background-color: #ededed;
+}
+.noti{
+    display: flex ;
+    width: 300px;
+    height: 80px;
+    border: 1px solid steelblue; 
+    background-color: #9de1fe;
+}
+.myprofile{
+    display: flex ;
+    width: 300px;
+    height: 60px;
+    border: 1px solid steelblue;     
+}
+.custpro{
+    display: flex ;
+    width: 300px;
+    height: 70px;
+    border: 1px solid steelblue;  
+}
+.profilepic{
+    display: flex;
+    border: 1px solid;
+    border-radius: 50px;
+    margin-top: 6px;
+    margin-left:11px;
+    width: 46px;
+    height: 44px;
+    background-color: #fff;
+}
+.searchbar{
+    display: flex ;
+    width: 300px;
+    height: 50px;
+    border: 1px solid steelblue;  
+    background-color: #fff;
+}
+.input{
+    position: relative;
+    width: 181px;
+    height: 27px;
+    display: flex;
+    margin: 2px 0px 0px 23px;
+    border: none;
+    background-color: #fff;
+    font: inherit;
+    font-size: .9rem;
+    
+}
+
+.input:focus {
+    outline: none;
+
+}
+
+
+.sbar{
+    border: 1px solid;
+    width: 276px;
+    height: 33px;
+    margin-top: 4px;
+    display: flex;
+    margin-left: 10px;
+    border-radius: 50PX;
+}
+.sicon{
+    margin-left: 15px;
+    margin-top: 4px;
+    display: flex;
+    color: #51585c;
+}
+.cached{
+    display: flex;
+    margin-left: 99px;
+    margin-top: 12px;
+    color: #51585c;
+}
+.chat{
+    display: flex;
+    margin-left: 25px;
+    margin-top: 13px;
+    color: #51585c;
+}
+.dots{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 12px;
+    color: #51585c;
+}
+.alert{
+    margin-left: 6px;
+    margin-top: 5px;
+    color: #9de1fe;
+}
+.add_alert{
+    background-color: #fff;
+    display: flex;
+    border: 1px solid;
+    margin-left: 10px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50px;
+    margin-top: 17px
+}
+.notification{
+    position: relative;
+    margin-left: 15px;
+    margin-top: 18px;
+    color: #303030f5;
+}
+.p{
+    margin-top: 4px;
+    font-weight: lighter;
+    font-size: 0.9rem;
+}
+.h{
+font-size: 1rem;
+font: caption;
+}
+.task{
+    position: absolute;
+    border: 1px solid;
+    width: 147px;
+    height: 138px;
+    transform-origin: right top;
+    transform: scale(1);
+    right: 516px;
+    top: 44px;
+    overflow: visible;
+    z-index: 9993;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.clickable {
+    cursor: pointer;
+}
