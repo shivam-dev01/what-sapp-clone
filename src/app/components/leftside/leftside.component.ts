@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class LeftsideComponent implements OnInit {
   title = 'whatsappui'
   isMenuOpen = false;
+  ispicOpen = false;
   
   constructor() { }
 
   ngOnInit(): void {
   }
-
-
+ 
 }

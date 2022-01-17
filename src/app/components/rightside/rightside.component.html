@@ -1,12 +1,17 @@
 <div class="rightside">
     <div class="righthead">
-        <div class="profilepic"></div>
+        <div class="flex">
+
+            <div class="profilepic"></div>
+        </div>
+        <div class="name">Angular</div>
+    <div class="flex_1">
         <div class="sicon">
-            <mat-icon>search</mat-icon>
+            <mat-icon class="icon">search</mat-icon>
          </div>
          <div class="dot clickable" (click)="toggleMenu()">
-            <mat-icon>more_vert</mat-icon>
-            <div class="tasks" *ngIf="!ismenuOpen">
+            <mat-icon class="icon">more_vert</mat-icon>
+            <div class="tasks" *ngIf="ismenuOpen">
     Contact info
       <br>
      
@@ -22,19 +27,35 @@
       Delete chat
     
     </div>
+    </div>
          </div>   
     </div>
-    <div class="chatbox">chatbox</div>
+    <div class="chatbox" >
+        <div class="info_1">
+        <div class="info">
+            <p>Messages and call are end-to-end encrypted.No one outside of this chat,not even WhatsApp,can read or listen to them.Tap to learn more.</p>
+        </div>
+    </div>
+        <p class="pa" *ngFor="let message of messages">{{message.text}}</p>
+        
+    </div>
     <div class="messtype">
+        <div class="flex_2">
         <div class="smile">
-            <mat-icon>mood</mat-icon>
+            <mat-icon class="icon">mood</mat-icon>
         </div>
         <div class="attach">
-            <mat-icon>attachment</mat-icon>
+            <mat-icon class="icon">attachment</mat-icon>
         </div>
-            <input type="text" class="input"  placeholder=" Type a message">
-            <div class="voice">
-                <mat-icon>keyboard_voice</mat-icon>
+    </div>
+            <input type="text"  class="input" name="text" [(ngModel)]="text" placeholder=" Type a message" />
+            <div class="voice" (click)="onClick()" *ngIf="!text">
+                
+                    <mat-icon class="icon">keyboard_voice</mat-icon>
+                
+            </div>
+            <div class="voice" *ngIf="text">
+                <mat-icon class="icon">send</mat-icon>
             </div>
            
     </div>  

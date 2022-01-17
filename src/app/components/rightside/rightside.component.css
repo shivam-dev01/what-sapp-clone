@@ -1,59 +1,86 @@
 .rightside{
     position: relative;
-    width: 499px;
-    height: 552px;
-    border: 1px solid black;
+    width: 100%;
+    height: 728px;
     flex-direction: column; 
 }
 .righthead{
     display: flex ;
-    width: 497px;
-    height: 60px;
-    border: 1px solid black; 
+    width: 100%;
+    height: 73px;
    background-color: #ededed;
+}
+.flex{
+    flex: 1;
+}
+.flex_1{
+    display: flex;
+    flex: 1;
+}
+.name{
+    display: flex;
+    align-items: center;
+    flex: 12;
 }
 .profilepic{
     display: flex;
-    border: 1px solid;
     border-radius: 50px;
-    margin-top: 6px;
+    margin-top: 10px;
     margin-left:11px;
-    width: 46px;
-    height: 44px;
-    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    background-image: url("../../../assets/logo.png");
 }
 .sicon{
-    margin-left: 363px;
-    margin-top: 13px;
+    align-items: center;
     display: flex;
     color: #51585c;
 }
 .dot{
     display: flex;
     margin-left: 10px;
-    margin-top: 12px;
+    align-items: center;
     color: #51585c;
 }
 .chatbox{
-    display: flex ;
-    width: 497px;
-    height: 431px;
-    border: 1px solid black; 
-   background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 81.8%;
+   background-image:url("../../../assets/wsbg.png.png");
+}
+.info_1{
+    margin-top: 30px;
+    padding-left: 9%;
+    padding-right: 9%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.info{
+    padding: 7.5px;
+    text-align: center;
+    font-size: small;
+    background-color: #fff5c4f2;
+    color: #000000f5;
+    border-radius: 7px;
 }
 .messtype{
     display: flex ;
-    width: 497px;
+    width: 100%;
     height: 60px;
-    border: 1px solid black; 
    background-color: #ededed; 
+}
+.flex_2{
+    display: flex;
+    flex: 0.9;
 }
 .input{
     position: relative;
-    width: 335px;
+    width: 86%;
     height: 35px;
     display: flex;
-    margin: 10px 0px 0px 55px;
+    margin-top: 10px;
     background-color: #fff;
     font: inherit;
     font-size: .9rem;
@@ -69,12 +96,13 @@
     color: #51585c;
 }
 .attach{
-    margin: 13px -28px 0px 13px;
+    padding: 13px;
     display: flex;
     color: #51585c;
 }
 .voice{
-    margin: 13px 0px 0px 16px;
+    flex: none;
+    padding: 9px;
     display: flex;
     color: #51585c;
 }
@@ -84,9 +112,11 @@
     margin-top: 12px;
     color: #51585c;
 }
+.icon{
+    font-size: 26px;
+}
 .tasks{
     position: absolute;
-    border: 1px solid;
     width: 147px;
     height: 138px;
     transform-origin: right top;
@@ -102,4 +132,14 @@
 }
 .clickable {
     cursor: pointer;
+}
+.pa{
+    margin: 3px;
+    padding: 3px;
+    color: white;
+    background-color: green;
+}
+.image{
+    width: 100%;
+    height: 100%;
 }

@@ -10,12 +10,9 @@
   
   .container {
     position: relative;
-    max-width: 800px;
-    margin: 30px auto;
-    min-height: 500px;
-    border: 1px solid steelblue;
+    width: 100%;
     display: flex;
-    
+    font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;
   }
   .btn {
     display: inline-block;

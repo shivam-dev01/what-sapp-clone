@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { LeftsideComponent, } from './components/leftside/leftside.component';
 import { RightsideComponent } from './components/rightside/rightside.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import {MatMenuModule} from '@angular/material/menu';
+import {MatInputModule} from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     MatIconModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatMenuModule,
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

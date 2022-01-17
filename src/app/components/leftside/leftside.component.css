@@ -1,57 +1,57 @@
 .leftcont{
     display: flex;
-    max-width: 300px;
-    min-height: 530px;
-    border: 1px solid steelblue; 
+    height: 728px;
     flex-direction: column;
    
 }
 .lefthead{
     display: flex ;
-    width: 300px;
-    height: 60px;
-    border: 1px solid steelblue; 
+    height: 14%;
    background-color: #ededed;
+   border-right: 1px solid lightgray;
+}
+.flex{
+    flex:0.9;
 }
 .noti{
     display: flex ;
-    width: 300px;
-    height: 80px;
-    border: 1px solid steelblue; 
+    width: 100%;
+    height: 16%;
     background-color: #9de1fe;
 }
 .myprofile{
+    position: relative;
     display: flex ;
-    width: 300px;
-    height: 60px;
-    border: 1px solid steelblue;     
+    height: 14%;
+    cursor: pointer;
+    overflow: auto;
+}
+.myprofile:hover{
+    background-color: #f2f2f2;
 }
 .custpro{
     display: flex ;
     width: 300px;
     height: 70px;
-    border: 1px solid steelblue;  
+  
 }
 .profilepic{
+    flex: none;
     display: flex;
-    border: 1px solid;
     border-radius: 50px;
-    margin-top: 6px;
+    margin-top: 11px;
     margin-left:11px;
-    width: 46px;
-    height: 44px;
-    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    background-image: url("../../../assets/logo.png");
 }
 .searchbar{
     display: flex ;
-    width: 300px;
     height: 50px;
-    border: 1px solid steelblue;  
-    background-color: #fff;
+    background-color: #ededed;
 }
 .input{
     position: relative;
-    width: 181px;
     height: 27px;
     display: flex;
     margin: 2px 0px 0px 23px;
@@ -69,13 +69,13 @@
 
 
 .sbar{
-    border: 1px solid;
-    width: 276px;
+    width: 422px;
     height: 33px;
-    margin-top: 4px;
+    margin-top: 6px;
     display: flex;
-    margin-left: 10px;
+    margin-left: 7px;
     border-radius: 50PX;
+    background-color: #fff;
 }
 .sicon{
     margin-left: 15px;
@@ -85,55 +85,68 @@
 }
 .cached{
     display: flex;
-    margin-left: 99px;
-    margin-top: 12px;
+    align-items: center;
     color: #51585c;
 }
 .chat{
     display: flex;
     margin-left: 25px;
-    margin-top: 13px;
+    align-items: center;
+    color: #51585c;
+}
+.size{
+    font-size: 26px;
     color: #51585c;
 }
 .dots{
     display: flex;
-    margin-left: 30px;
-    margin-top: 12px;
+    margin-left: 25px;
+    align-items: center;
     color: #51585c;
+
+}
+button{
+    border: none;
 }
 .alert{
     margin-left: 6px;
-    margin-top: 5px;
+    margin-bottom: 10px;
     color: #9de1fe;
+    display: flex;
+    align-items: center;
 }
 .add_alert{
+    flex: none;
     background-color: #fff;
     display: flex;
-    border: 1px solid;
     margin-left: 10px;
-    width: 38px;
-    height: 38px;
+    width: 50px;
+    height: 50px;
     border-radius: 50px;
     margin-top: 17px
 }
 .notification{
     position: relative;
     margin-left: 15px;
-    margin-top: 18px;
+    margin-top: 11px;
     color: #303030f5;
 }
 .p{
     margin-top: 4px;
-    font-weight: lighter;
-    font-size: 0.9rem;
+    font:inherit;
+    vertical-align: initial;
+    color: #303030d9;
+    cursor: pointer;
 }
 .h{
-font-size: 1rem;
-font: caption;
+font: inherit;
+color:#303030F5;
+font-size: 1.2rem;
+vertical-align: initial;
+cursor: pointer;
 }
 .task{
     position: absolute;
-    border: 1px solid;
     width: 147px;
     height: 138px;
     transform-origin: right top;
@@ -146,9 +159,57 @@ font: caption;
     text-align: center;
     display: flex;
     justify-content: center;
+    border-radius: 5px;
 }
 
 
 .clickable {
     cursor: pointer;
+}
+.pic{
+    position: absolute;
+    width: 147px;
+    height: 138px;
+    transform-origin: right top;
+    transform: scale(1);
+    right: 595px;
+    top: 31px;
+    overflow: visible;
+    z-index: 9993;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    
+}
+.picture{
+    position: absolute;
+    border-radius: 50px;
+    margin-top: -1px;
+    margin-left:-1px;
+    width: 50px;
+    height: 50px;
+}
+.name{
+    flex: 0.9;
+    display: flex;
+    padding: 17px;
+}
+.time{
+    display: flex;
+    margin-top: 15px;
+    font-size: 13px;
+    color: #00000073
+}
+.border{
+    border-top: 1px solid #f2f2f2;
+}
+.user-profile-list{
+    height: 100%;
+    overflow: auto;
+    
+}
+.user-profile-list::-webkit-scrollbar{
+    display: none;
 }
