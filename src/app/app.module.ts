@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
+import { PickerModule } from '@ctrl/ngx-emoji-mart';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MatMenuModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    PickerModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

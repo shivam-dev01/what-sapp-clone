@@ -2,38 +2,168 @@
    <div class="lefthead">
       <div class="flex">
 
-      <div class="profilepic clickable" (click)="this.ispicOpen = !this.ispicOpen">
-         <div>
-            <img src="assets/image.jfif" class="picture">
+         <div class="profilepic clickable" (click)="this.ispicOpen = true">
+            <img src="../../../assets/image.jfif" alt="error" class="picture">
+            <div class="new_chat" *ngIf="ispicOpen">
+               <div class="newchat">
+                  <div class="arrow_name" (click)=" $event.stopPropagation(); ispicOpen = false">
+                     <mat-icon class="icons_size">keyboard_backspace</mat-icon>
+                  </div>
+                  <div class="name2">
+                     <h3> Profile</h3>
+                  </div>
+
+               </div>
+
+               <div class="user-profile-list1">
+                  <div class="Profile_sec">
+                     <div class="my_profile">
+                        <img src="../../../assets/image.jfif" alt="error" class="p_image"> 
+                        
+                     </div>
+                  </div>
+                  <div class="profile_details">
+                     <div class="contact"></div>
+                     <div class="contact_name">UNI CARD</div>
+                     <div class="about_profile">This name will be visible to your WhatsApp
+                        customers and can be edited from the app on your mobile device.</div>
+                  </div>
+                  
+                  <div class="qwe">
+                     <div class="bussiness_d"></div>
+                     <div class="busse_name">Business Description</div>
+                     <img src="../../../assets/Capture4.PNG" alt=" error" class="b_image">
+                  </div>
+                  <div class="border"></div>
+                  <div class="qwe">
+                     <div class="bussiness_n"></div>
+                     <div class="busse_name">Not a business</div>
+                     <img src="../../../assets/Capture4.PNG" alt=" error" class="b_image">
+                  </div>
+                  <div class="border"></div>
+                  <div class="qwe">
+                     <div class="bussiness_a"></div>
+                     <div class="busse_name">Business Address</div>
+                     <img src="../../../assets/Capture4.PNG" alt=" error" class="b_image">
+                  </div>
+                  <div class="border"></div>
+                  <div class="qwe">
+                     <div class="bussiness_h"></div>
+                     <div class="busse_name">Business Hours</div>
+                     <img src="../../../assets/Capture4.PNG" alt=" error" class="b_image">
+                  </div>
+                  <div class="border"></div>
+                  <div class="qwe">
+                     <div class="email"></div>
+                     <div class="email_name">Email Address</div>
+                     <img src="../../../assets/Capture4.PNG" alt=" error" class="b_image">
+                  </div>
+                  <div class="border"></div>
+                  <div class="qwe">
+                     <div class="website"></div>
+                     <div class="busse_name">Website</div>
+                     <img src="../../../assets/Capture4.PNG" alt=" error" class="b_image">
+                  </div>
+                  
+               </div>
+            </div>
          </div>
       </div>
 
-         <div> <img src="assets/image.jfif" alt="error" class="pic" *ngIf="ispicOpen"></div>
-      </div>
       <div style="display: flex; flex: none;">
-      <div class="cached">
-         <mat-icon style="cursor: pointer;" class="size">cached</mat-icon>
-      </div>
-      <div class="chat">
-         <mat-icon style="cursor: pointer;" class="size">chat</mat-icon>
-      
-      </div>
-      <div class="dots clickable">
+         <div class="cached">
+            <mat-icon style="cursor: pointer;" class="size">cached</mat-icon>
+         </div>
+         <div class="chat" (click)="this.isnewChatOpen = true">
+            <mat-icon style="cursor: pointer;" class="size">chat</mat-icon>
+            <div class="new_chat" *ngIf="isnewChatOpen">
+               <div class="newchat">
+                  <div class="arrow_name" (click)=" $event.stopPropagation(); isnewChatOpen = false">
 
-         <button mat-icon-button [matMenuTriggerFor]="menu" class="button">
-            <mat-icon style="cursor: pointer;" class="size">more_vert</mat-icon>
-         </button>
+                     <mat-icon class="icons_size">keyboard_backspace</mat-icon>
+                  </div>
+                  <div class="name2">
+                     <h3> New chat</h3>
+                  </div>
 
-         <mat-menu #menu="matMenu">
-            <button mat-menu-item>New chat</button>
-            <button mat-menu-item>Contact</button>
-            <button mat-menu-item>Contact</button>
-            <button mat-menu-item>Contact</button>
-            <button mat-menu-item>Contact</button>
-            <button mat-menu-item>Contact</button>
-         </mat-menu>
+               </div>
+               <div class="searchbar">
+                  <div class="sbar">
+                     <div class="sicon">
+                        <mat-icon style="cursor: pointer;">search</mat-icon>
+                     </div>
+                     <input type="text" class="input" placeholder="Search contacts">
+                  </div>
+               </div>
+               <div class="user-profile-list1">
+                  <div class="myprofile2">
+                     <div class="profilepic1"></div>
+                     <div class="name1">New group</div>
 
-         <!-- <div class="task" *ngIf = "isMenuOpen" >
+                  </div>
+                  <div class="border"></div>
+                  <div class="myprofile2">
+                     <div class="name3">FREQUENTLY CONTACTED</div>
+                  </div>
+                  <div class="border"></div>
+                  <div class="myprofile2">
+                     <div class="profilepic"></div>
+                     <div class="name">Angular</div>
+
+                  </div>
+                  <div class="border"></div>
+                  <div class="myprofile2">
+                     <div class="profilepic"></div>
+                     <div class="name">Angular</div>
+
+                  </div>
+                  <div class="border"></div>
+                  <div class="myprofile2">
+                     <div class="profilepic"></div>
+                     <div class="name">jason</div>
+
+                  </div>
+                  <div class="border"></div>
+                  <div class="myprofile2" >
+                     <div class="profilepic"></div>
+                     <div class="name">Shivam</div>
+
+                  </div>
+                  <div class="border"></div>
+                  <div class="myprofile2">
+                     <div class="profilepic"></div>
+                     <div class="name">Shivam</div>
+                  </div>
+                  <div class="border"></div>
+                  <div class="myprofile2">
+                     <div class="profilepic"></div>
+                     <div class="name">java</div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+         <div class="dots clickable">
+
+            <button mat-icon-button [matMenuTriggerFor]="menu" class="button">
+               <mat-icon style="cursor: pointer;" class="size">more_vert</mat-icon>
+            </button>
+
+            <mat-menu #menu="matMenu" xPosition="before">
+               <div class="left-mat-menu">
+
+                  <button mat-menu-item>New group</button>
+                  <button mat-menu-item>Profile</button>
+                  <button mat-menu-item>Catalog</button>
+                  <button mat-menu-item>Starred messages</button>
+                  <button mat-menu-item>Lables</button>
+                  <button mat-menu-item>Setting</button>
+                  <button mat-menu-item>Log out</button>
+               </div>
+
+            </mat-menu>
+
+            <!-- <div class="task" *ngIf = "isMenuOpen" >
       New group
       <br>
      
@@ -50,13 +180,13 @@
       <br>
       Log out
    </div> -->
+         </div>
       </div>
-   </div>
    </div>
    <div class="noti">
       <div class="add_alert">
          <div class="alert">
-            <mat-icon style="cursor: pointer; font-size: 35px;" >notifications_off</mat-icon>
+            <mat-icon style="cursor: pointer; font-size: 35px;">notifications_off</mat-icon>
          </div>
       </div>
       <div class="notification">
@@ -65,65 +195,69 @@
       </div>
    </div>
    <div class="">
-   <div class="searchbar">
-      <div class="sbar">
-         <div class="sicon">
-            <mat-icon style="cursor: pointer;">search</mat-icon>
+      <div class="searchbar">
+         <div class="sbar">
+            <div class="sicon" *ngIf="!this.text">
+               <mat-icon style="cursor: pointer;">search</mat-icon>
+            </div>
+            <div class="sicon" *ngIf="this.text">
+               <mat-icon style="cursor: pointer;" class="color">keyboard_backspace</mat-icon>
+            </div>
+            <input type="text" class="input" name="text" [(ngModel)]="text" placeholder="Search or start new chat">
          </div>
-         <input type="text" class="input" placeholder="Search or start new chat">
       </div>
-   </div>
-</div>
-   <div class = "user-profile-list">
 
-   <div class="myprofile">
-      <div class="profilepic"></div>
-      <div class="name">Angular</div>
-      <div class="time">05:55</div>
    </div>
-   <div class="border"></div>
-   <div class="myprofile">
-      <div class="profilepic"></div>
-      <div class="name">Angular</div>
-      <div class="time">12:55</div>
+   <div class="user-profile-list">
+
+      <div class="myprofile" (click)="sendSelection('Angular')"> 
+         <div class="profilepic"></div>
+         <div class="name">Angular</div>
+         <div class="time">05:55</div>
+      </div>
+      <div class="border"></div>
+      <div class="myprofile" (click)="sendSelection('React')">
+         <div class="profilepic"></div>
+         <div class="name">React</div>
+         <div class="time">12:55</div>
+      </div>
+      <div class="border"></div>
+      <div class="myprofile" (click)="sendSelection('Node')"> 
+         <div class="profilepic"></div>
+         <div class="name">Node</div>
+         <div class="time">01:55</div>
+      </div>
+      <div class="border" (click)="sendSelection('java')"></div>
+      <div class="myprofile">
+         <div class="profilepic"></div>
+         <div class="name">java</div>
+         <div class="time">Yesterday</div>
+      </div>
+      <div class="border"></div>
+      <div class="myprofile" (click)="sendSelection('jason')">
+         <div class="profilepic"></div>
+         <div class="name">jason</div>
+         <div class="time">Friday</div>
+      </div>
+      <div class="border"></div>
+      <div class="myprofile"  (click)="sendSelection('C++')">
+         <div class="profilepic"></div>
+         <div class="name">C++</div>
+         <div class="time">Monday</div>
+      </div>
+      <div class="border"></div>
+      <div class="myprofile"  (click)="sendSelection('Html')">
+         <div class="profilepic"></div>
+         <div class="name">Html</div>
+         <div class="time">1/1/2022</div>
+      </div>
+      <div class="border"></div>
+      <div class="myprofile"  (click)="sendSelection('Shivam')">
+         <div class="profilepic"></div>
+         <div class="name">Shivam</div>
+         <div class="time">09/01/2022</div>
+      </div>
+
    </div>
-   <div class="border"></div>
-   <div class="myprofile">
-      <div class="profilepic"></div>
-      <div class="name">Angular</div>
-      <div class="time">01:55</div>
-   </div>
-   <div class="border"></div>
-   <div class="myprofile">
-      <div class="profilepic"></div>
-      <div class="name">Angular</div>
-      <div class="time">Yesterday</div>
-   </div>
-   <div class="border"></div>
-   <div class="myprofile">
-      <div class="profilepic"></div>
-      <div class="name">jason</div>
-      <div class="time">Friday</div>
-   </div>
-   <div class="border"></div>
-   <div class="myprofile">
-      <div class="profilepic"></div>
-      <div class="name">Shivam</div>
-      <div class="time">Monday</div>
-   </div>
-   <div class="border"></div>
-   <div class="myprofile">
-      <div class="profilepic"></div>
-      <div class="name">Shivam</div>
-      <div class="time">1/1/2022</div>
-   </div>
-   <div class="border"></div>
-   <div class="myprofile">
-      <div class="profilepic"></div>
-      <div class="name">Shivam</div>
-      <div class="time">09/01/2022</div>
-   </div>
-   
-</div>
 
 </div>

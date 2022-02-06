@@ -25,6 +25,17 @@
     height: 14%;
     cursor: pointer;
     overflow: auto;
+
+}
+.myprofile2{
+    position: relative;
+    display: flex ;
+    height: 14%;
+    cursor: pointer;
+   
+}
+.myprofile2:hover{
+    background-color: #f2f2f2;
 }
 .myprofile:hover{
     background-color: #f2f2f2;
@@ -45,10 +56,21 @@
     height: 50px;
     background-image: url("../../../assets/logo.png");
 }
+.profilepic1{
+    flex: none;
+    display: flex;
+    border-radius: 50px;
+    margin-top: 11px;
+    margin-left:11px;
+    width: 50px;
+    height: 50px;
+    background-image: url("../../../assets/newgroup2.png");
+}
 .searchbar{
     display: flex ;
     height: 50px;
     background-color: #ededed;
+    flex-direction: column;
 }
 .input{
     position: relative;
@@ -69,11 +91,11 @@
 
 
 .sbar{
-    width: 422px;
+    width: 95%;
     height: 33px;
-    margin-top: 6px;
+    margin-top: 7px;
     display: flex;
-    margin-left: 7px;
+    margin-left: 11px;
     border-radius: 50PX;
     background-color: #fff;
 }
@@ -145,21 +167,34 @@ font-size: 1.2rem;
 vertical-align: initial;
 cursor: pointer;
 }
-.task{
+.new_chat{
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    width: 147px;
-    height: 138px;
+    width: 30%;
+    height: 100%;
     transform-origin: right top;
     transform: scale(1);
-    right: 516px;
-    top: 44px;
+    left: 0px;
+    top: 0px;
     overflow: visible;
     z-index: 9993;
     background-color: #fff;
     text-align: center;
-    display: flex;
     justify-content: center;
     border-radius: 5px;
+    
+}
+.newchat{
+    width: 100%;
+    height: 120px;
+    background-color: #00bfa5;
+    display: flex;
+    
+}
+.left-mat-menu{
+    padding-left: 8px;
+    padding-right: 48px;
 }
 
 
@@ -196,6 +231,36 @@ cursor: pointer;
     display: flex;
     padding: 17px;
 }
+.name1{
+    flex: 1;
+    display: flex;
+    padding-top: 25px;
+    padding-left: 15px;
+    color: #000000;
+    font-size: 17px;
+}
+.name3{
+    flex: 1;
+    display: flex;
+    padding-top: 25px;
+    padding-left: 7%;
+    color: #009688;
+    font-size: 17px;
+}
+.name2{
+    font: inherit;
+    display: flex;
+    flex: 1.4;
+    color: white;
+    font-size: 20px;
+    margin-top: 17%;
+}
+.arrow_name{
+    display: flex;
+    flex: 0.2;
+    margin-top: 18%;
+    margin-left: 19px;
+}
 .time{
     display: flex;
     margin-top: 15px;
@@ -210,6 +275,183 @@ cursor: pointer;
     overflow: auto;
     
 }
-.user-profile-list::-webkit-scrollbar{
-    display: none;
+.user-profile-list1{
+    height: 77%;
+    overflow: auto;
+    
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:#fff;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:lightgray; 
+  }
+  
+.arrow{
+    display: flex;
+    flex: 0.1;
+}
+.Profile_sec{
+    display: flex;
+    height: 196px;
+    background-color: #eaf2f5;
+}
+.profile_details{
+    position: relative;
+    display: flex ;
+    height: 35%;
+    cursor: pointer;
+}
+.contact{
+    flex: none;
+    display: flex;
+    border-radius: 50px;
+    margin-top: 15%;
+    margin-left:8%;
+    width: 26px;
+    height: 26px;
+    background-image: url("../../../assets/capture2.PNG");
+}
+.contact_name{
+    flex: 1;
+    display: flex;
+    color: #000000;
+    font-size: 17px;
+    margin-top: 15%;
+    margin-left: 6%;
+}
+.bussiness_d{
+    flex: none;
+    display: flex;
+    border-radius: 50px;
+    margin-left:8%;
+    width: 26px;
+    height: 35px;
+    background-image: url("../../../assets/capture3.PNG");
+}
+.qwe{
+    position: relative;
+    display: flex ;
+    height: 14%;  
+}
+.about_profile{
+    margin-top: 26%;
+    line-height: 1.4;
+    font-size: 0.75rem;
+    margin-left: 18%;
+    display: flex;
+    flex: none;
+    position: absolute;
+    margin-right: 12.6%;
+    color: #999;
+}
+
+.busse_name{
+    flex: 1;
+    display: flex;
+    color: #999;
+    font-size: 17px;
+    margin-left: 6%;
+    margin-top: 10px;
+}
+.b_image{
+    flex: none;
+    display: flex;
+    border-radius: 50px;
+    margin-right: 5%;
+    width: 30px;
+    height: 33px;
+    margin-top: 7px;
+}
+.website{
+    flex: none;
+    display: flex;
+    border-radius: 50px;
+    margin-left:8%;
+    margin-top: 5px;
+    width: 26px;
+    height: 35px;
+    background-image: url("../../../assets/Capture9.PNG");  
+}
+.email{flex: none;
+display: flex;
+border-radius: 50px;
+margin-left:7%;
+margin-top: 5px;
+width: 32px;
+height: 35px;
+background-image: url("../../../assets/Capture8.PNG");
+}
+.email_name{
+    flex: 1;
+    display: flex;
+    color: #999;
+    font-size: 17px;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+.bussiness_h{
+    flex: none;
+    display: flex;
+    border-radius: 50px;
+    margin-left:7%;
+    margin-top: 5px;
+    width: 29px;
+    height: 35px;
+    background-image: url("../../../assets/Capture7.PNG");  
+}
+.bussiness_a{
+    flex: none;
+    display: flex;
+    border-radius: 50px;
+    margin-left:7%;
+    margin-top: 5px;
+    width: 29px;
+    height: 35px;
+    background-image: url("../../../assets/Capture6.PNG");  
+}
+.bussiness_n{
+    flex: none;
+    display: flex;
+    border-radius: 50px;
+    margin-left:7%;
+    margin-top: 5px;
+    width: 29px;
+    height: 35px;
+    background-image: url("../../../assets/Capture5.PNG");
+}
+.my_profile{
+display: flex;
+flex: none;
+    border: 6px solid #fff;
+    width: 165px;
+    height: 165px;
+    border-radius: 100px;
+    margin-left: 28%;
+    margin-top: 18%;
+    
+}
+.p_image{
+    opacity: 1;
+    margin-top: 1px;
+    margin-left: 1px;
+    border-radius: 75px;
+    margin-top: -1px;
+    display: flex;
+    flex: none;
+    width: 150px;
+    height: 150px;  
+}
+:hover.p_image{
+    opacity: 0.5;
+    
 }

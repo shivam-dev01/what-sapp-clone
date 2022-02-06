@@ -4,59 +4,80 @@
 
             <div class="profilepic"></div>
         </div>
-        <div class="name">Angular</div>
-    <div class="flex_1">
-        <div class="sicon">
-            <mat-icon class="icon">search</mat-icon>
-         </div>
-         <div class="dot clickable" (click)="toggleMenu()">
-            <mat-icon class="icon">more_vert</mat-icon>
-            <div class="tasks" *ngIf="ismenuOpen">
-    Contact info
-      <br>
-     
-      Select messages
-      <br>
-      
-      Close chat
-      <br>
-     Mute notifications
-      <br>
-      Clear messages
-      <br>
-      Delete chat
-    
-    </div>
-    </div>
-         </div>   
-    </div>
-    <div class="chatbox" >
-        <div class="info_1">
-        <div class="info">
-            <p>Messages and call are end-to-end encrypted.No one outside of this chat,not even WhatsApp,can read or listen to them.Tap to learn more.</p>
+        <div class="name">{{selected}}</div>
+        <div class="flex_1">
+            <div class="sicon">
+                <mat-icon class="icon clickable">search</mat-icon>
+            </div>
+            <div class="dot clickable" (click)="toggleMenu()">
+                <button mat-icon-button [matMenuTriggerFor]="menu" class="button">
+                    <mat-icon class="icon clickable">more_vert</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu" xPosition="before">
+                    <div class="right-mat-menu">
+
+                        <button mat-menu-item>Contact info</button>
+                        <button mat-menu-item>Select messages</button>
+                        <button mat-menu-item>Close chat</button>
+                        <button mat-menu-item>Mute notification</button>
+                        <button mat-menu-item>Clear messages</button>
+                        <button mat-menu-item>Delete chat</button>
+                    </div>
+
+                </mat-menu>
+            </div>
         </div>
     </div>
-        <p class="pa" *ngFor="let message of messages">{{message.text}}</p>
-        
+    <div class="chatbox">
+        <div class="info_1">
+            <div class="info">
+                <p>Messages and call are end-to-end encrypted.No one outside of this chat,not even WhatsApp,can read or
+                    listen to them.Tap to learn more.</p>
+            </div>
+        </div>
+        <div class="message-box" id = "message-box">
+            <p class="chatright" *ngFor="let message of messages">{{message.text}}</p>
+
+        </div>
+
     </div>
     <div class="messtype">
         <div class="flex_2">
-        <div class="smile">
-            <mat-icon class="icon">mood</mat-icon>
+            <div class="smile">
+                <button  [matMenuTriggerFor]="emojiPopup" style="border: none;">
+                    <mat-icon class="icon clickable">mood</mat-icon>
+                </button>
+                
+
+                <mat-menu #emojiPopup="matMenu" xPosition="after">
+                    
+                    <emoji-mart class="emoji-mart"  (emojiSelect)="addEmoji($event)"
+                    title="Choose your emoji"></emoji-mart>
+            
+                </mat-menu>
+            
+                
+            </div>
+            <div class="attach clickable">
+
+                <input type="file" id="upload-file" hidden />
+                <label for="upload-file" class="clickable">
+                    <mat-icon class="icon"> attach_file</mat-icon>
+                </label>
+
+
+
+            </div>
         </div>
-        <div class="attach">
-            <mat-icon class="icon">attachment</mat-icon>
+        <input type="text" class="input" name="text" (keyup)="keyUp($event)" [(ngModel)]="text" placeholder=" Type a message" />
+        <div class="voice"  *ngIf="!text">
+
+            <mat-icon class="icon clickable">keyboard_voice</mat-icon>
+
         </div>
+        <div class="voice" (click)="onClick()" *ngIf="text">
+            <mat-icon class="icon clickable">send</mat-icon>
+        </div>
+
     </div>
-            <input type="text"  class="input" name="text" [(ngModel)]="text" placeholder=" Type a message" />
-            <div class="voice" (click)="onClick()" *ngIf="!text">
-                
-                    <mat-icon class="icon">keyboard_voice</mat-icon>
-                
-            </div>
-            <div class="voice" *ngIf="text">
-                <mat-icon class="icon">send</mat-icon>
-            </div>
-           
-    </div>  
 </div>

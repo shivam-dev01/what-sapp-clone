@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { SharedDataService } from '../shared-data.service';
 @Component({
   selector: 'app-leftside',
   templateUrl: './leftside.component.html',
@@ -7,12 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LeftsideComponent implements OnInit {
   title = 'whatsappui'
-  isMenuOpen = false;
+  isnewChatOpen = false;
   ispicOpen = false;
+  text: string = "";
+  constructor( private sharedService: SharedDataService) { }
   
-  constructor() { }
 
   ngOnInit(): void {
   }
+
+  sendSelection(data: string) {
+    this.sharedService.selectionSubject.next(data);
+  }
+
  
 }

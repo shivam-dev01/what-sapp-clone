@@ -1,3 +1,4 @@
+@import '~@ctrl/ngx-emoji-mart/picker';
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,6 +8,10 @@
   body {
     font-family: "Poppins", sans-serif;
   }
+
+  .clickable {
+    cursor: pointer;
+}
   
   .container {
     position: relative;
@@ -68,6 +73,14 @@
   .form-control-check input {
     flex: 2;
     height: 20px;
+  }
+  .icons_size{
+    cursor: pointer;
+    color: white;
+    font-size: 29px;
+  }
+  .color{
+    color:#33b7f6;;
   }
 
 html, body { height: 100%; }
